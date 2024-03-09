@@ -18,10 +18,10 @@ POST http://localhost:8080/users
 Content-Type: application/json
 
 {
-  "email": "maidan12033@gmail.com",
+  "email": "Yaniv12033@gmail.com",
   "name": {
     "first": "hackerufullsatck",
-    "last": "gonen"
+    "last": "Zinger"
   },
   "address": {
     "street": "123 Main St",
@@ -54,7 +54,7 @@ POST http://localhost:8080/users/request-new-code
 Content-Type: application/json
 
 {
-  "email": "maidan12033@gmail.com"  
+  "email": "Yaniv12033@gmail.com"  
 }
 
 
@@ -68,7 +68,7 @@ Content-Type: application/json
 {
   "name": {
     "first": "Willis",
-    "last": "gonen"
+    "last": "Zinger"
   },
   "address": {
     "street": "123 Main St",
@@ -85,7 +85,7 @@ Content-Type: application/json
   "email": "admin@gmail.com",
   "isBusiness": false,
   "isAdmin": true,
-  "password": "Maidan!123" 
+  "password": "Yaniv!123" 
 }
 
 
@@ -94,8 +94,8 @@ POST http://localhost:8080/users/login
 Content-Type: application/json
 
 {
-  "email": "maidan12033@gmail.com",
-  "password": "Maidan!123"
+  "email": "Yaniv12033@gmail.com",
+  "password": "Yaniv!123"
 }
 
 ### Login:
@@ -122,12 +122,12 @@ Content-Type: application/json
 Accept: application/json
 
 {
-  "userEmail": "maidan12033@gmail.com",
+  "userEmail": "Yaniv12033@gmail.com",
   "orderedCardIds": ["65da0a923bb22a2e60784a42"],
   "formData": {
     "DeliveryInformation": {
       "firstName": "John",
-      "email": "maidan12033@gmail.com",
+      "email": "Yaniv12033@gmail.com",
       "lastName": "Doe",
       "address": "123 Main St",
       "city": "Cityville",
@@ -148,7 +148,7 @@ Content-Type: application/json
 
 {
   "name": "John Doe",
-  "email": "maidan12033@gmail.com",
+  "email": "Yaniv12033@gmail.com",
   "message": "This is a test message"
 }
 
@@ -243,7 +243,7 @@ Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsImlkIjoiNjU5YmZjMGY2M2IzZGJhMDBkYjI2ZTYxIiwiaXNCdXNpbmVzcyI6dHJ1ZSwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNzA1MTU2NzE1fQ.dtHaDafuEZju6wl086JuR2-cRwqT8LAyldKtCR3FODY
 
  {
-  "email": "maidan12033@gmail.com"
+  "email": "Yaniv12033@gmail.com"
 }
 
 
