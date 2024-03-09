@@ -1,0 +1,27 @@
+.thank-you-page {
+  margin-top: 25rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.receipt-content {
+  margin-top: 1rem;
+}
+
+.continue-shopping-button {
+  height: 3vh;
+  background-color: darkGreen;
+  color: white;
+  border-radius: 999px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.continue-shopping-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.3);
+  background-color: green;
+}

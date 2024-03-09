@@ -1,0 +1,55 @@
+@media (max-width: 600px) {
+  .MuiTypography-h1 {
+    font-size: 46px;
+  }
+  .MuiTypography-h2 {
+    font-size: 26px;
+  }
+
+  .MuiTypography-h6 {
+    font-size: 16px;
+  }
+
+  .MuiDivider-root {
+    max-width: 600px;
+  }
+
+  .MuiGrid-item {
+    flex-basis: 100%;
+  }
+
+  .MuiPagination-root {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 960px) {
+  .MuiTypography-h1 {
+    font-size: 46px;
+  }
+  .MuiTypography-h2 {
+    font-size: 26px;
+  }
+
+  .MuiTypography-h6 {
+    font-size: 16px;
+  }
+  .MuiDivider-root {
+    max-width: 750px;
+  }
+}
+
+@media (min-width: 961px) and (max-width: 1500px) {
+  .MuiTypography-h1 {
+    font-size: 60px;
+  }
+
+  .MuiTypography-h2 {
+    font-size: 40px;
+  }
+
+  .MuiTypography-h6 {
+    font-size: 30px;
+  }
+}

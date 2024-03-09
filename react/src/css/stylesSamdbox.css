@@ -1,0 +1,67 @@
+@media (min-width:200px) and (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+
+  .sandbox-typography {
+    font-size: 20px;
+    padding: 15px;
+  }
+
+  .sandbox-divider {
+    margin-top: 5px;
+  }
+
+  .MuiTableCell-root {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 800px) {
+  .MuiTableCell-root {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 12px;
+  }
+
+  .sandbox-typography {
+    font-size: 18px;
+    padding: 10px;
+    font-family: "serif";
+    text-align: center;
+    padding-top: 5px;
+  }
+
+  .sandbox-divider {
+    margin-top: 2px;
+    max-width: 100%;
+    margin-left: 0;
+    padding-top: 5px;
+  }
+
+  .MuiTableHead-root,
+  .MuiTableRow-root {
+    display: block;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 800px) {
+  .MuiTableCell-root {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
