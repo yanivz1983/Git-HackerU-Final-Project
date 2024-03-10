@@ -17,6 +17,7 @@ import multer from "multer";
 import { User } from "./database/model/user";
 import { isAdminOrUser } from "./middleware/is-admin-or-user";
 import rateLimit from "express-rate-limit";
+import { initDB } from "./database/initDB";
 
 configDotEnv();
 connect();
@@ -136,8 +137,9 @@ usersRouter.post("/order-confirmation", async (req, res) => {
       }
 
       const itemPrice = parseFloat(
-        card.price.replace("$", "").replace(/,/g, "")
+        (card.price || "").replace("$", "").replace(/,/g, "")
       );
+
       const itemQuantity = Math.max(1, parseInt(card.quantity));
 
       if (isNaN(itemPrice) || isNaN(itemQuantity)) {
@@ -157,7 +159,7 @@ usersRouter.post("/order-confirmation", async (req, res) => {
 
       const itemTotal = itemPrice * itemQuantity + itemShippingCost;
 
-      totalPrice += itemTotal; // Update total price
+      totalPrice += itemTotal;
 
       return {
         title: card.title,

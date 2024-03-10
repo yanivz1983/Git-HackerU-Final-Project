@@ -162,5 +162,5 @@ export interface OrderItem {
   quantity: number;
   shipping: string;
   imageUrl: string | undefined;
-  itemTotal: number; // Add the missing property
+  itemTotal: number; 
 }

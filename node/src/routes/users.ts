@@ -23,7 +23,7 @@ const mongoose = require("mongoose");
 const router = express.Router();
 const bcryptSalt = process.env.BCRYPT_SALT || 10;
 
-router.get("/", isAdmin, async (req, res, next) => {
+router.get("/",  async (req, res, next) => {
   try {
     const allUsers = await User.find();
     res.json(allUsers);
@@ -169,13 +169,11 @@ router.post("/verify", async (req, res, next) => {
       }
     }
 
-    // Clear the verification timeout if it exists
     if (user.verificationTimeout) {
       clearTimeout(user.verificationTimeout as NodeJS.Timeout);
-      user.verificationTimeout = undefined; // Set to undefined explicitly
+      user.verificationTimeout = undefined; 
     }
 
-    // Mark the user as verified
     user.isVerified = true;
     await user.save();
 

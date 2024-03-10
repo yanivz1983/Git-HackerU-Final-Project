@@ -1,4 +1,4 @@
-export interface OrderItem {
+interface OrderItem {
   title: string;
   price: number;
   quantity: number;

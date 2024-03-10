@@ -2,10 +2,19 @@
 
 Welcome to our React Web Application! This guide will help you navigate through the various features and functionalities available on our platform.
 
-## This The Admin User
+## Exiting Users
 
-- [email:admin@gmail.com]
-- [password:123456aA!]
+Admin
+User: Admin@gmail.com
+Password: 123456aA!
+
+Bussines
+User: Bussines@gmail.com
+Password: 123456bB!
+
+Regular
+User: Admin@gmail.com
+Password: 123456cC!
 
 ## Table of Contents
 

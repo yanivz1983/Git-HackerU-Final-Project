@@ -5,34 +5,28 @@ import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 const AdvertisementSlider = () => {
   const advertisementImages = [
     {
-      url: "https://www.thehersheycompany.com/en_us/home.html",
+      url: "http://localhost:3000/card-details/65edf391cccc27bce724d6c5",
       src:
         process.env.PUBLIC_URL + "/assets/imgs/minctosoft-removebg-preview.png",
     },
     {
-      url: "https://example.com/page2",
+      url: "http://localhost:3000/card-details/65edf1143c0fe94ac11e12f8",
       src: process.env.PUBLIC_URL + "/assets/imgs/macbook-removebg-preview.png",
     },
     {
-      url: "https://example.com/page3",
+      url: "http://localhost:3000/card-details/65edf56e4d92f64c137a5fac",
       src:
         process.env.PUBLIC_URL +
         "/assets/imgs/maxresdefault-removebg-preview.png",
     },
     {
-      url: "https://example.com/page3",
-      src:
-        process.env.PUBLIC_URL +
-        "/assets/imgs/image_readtop-removebg-preview.png",
-    },
-    {
-      url: "https://example.com/page3",
+      url: "http://localhost:3000/card-details/65edefa06b0b80ffe71c831c",
       src:
         process.env.PUBLIC_URL +
         "/assets/imgs/maxresdefault__1_-removebg-preview.png",
     },
     {
-      url: "https://example.com/page3",
+      url: "http://localhost:3000/card-details/65edf2bbba595a1247e65d53",
       src:
         process.env.PUBLIC_URL + "/assets/imgs/iphone15-removebg-preview.png",
     },

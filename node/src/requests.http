@@ -9,7 +9,7 @@ Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQ
 
 
 ### DELETE  user:
-DELETE http://localhost:8080/users/65e896b2d43f746c79bb3d0d
+DELETE http://localhost:8080/users/65ea23528cafa2d89dfa58cf
 Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsImlzQnVzaW5lc3MiOnRydWUsImlzQWRtaW4iOnRydWUsImlhdCI6MTcwNDU1MTk0OH0.I_AKWHioPcOsZTfUt_oJzynTtDARY8cUsEngEweYT9M
 
 
@@ -18,10 +18,10 @@ POST http://localhost:8080/users
 Content-Type: application/json
 
 {
-  "email": "Yaniv12033@gmail.com",
+  "email": "Regular@gmail.com",
   "name": {
-    "first": "hackerufullsatck",
-    "last": "Zinger"
+    "first": "Regular",
+    "last": "Regular"
   },
   "address": {
     "street": "123 Main St",
@@ -35,9 +35,9 @@ Content-Type: application/json
     "alt": "user-profile",
     "url": "https://www.theinterrobang.ca/images/interrobang/030819/B8QC6DAZ9PWRK7M2.jpg"
   },
-  "phone": "0508123090",
-  "isBusiness": false,
-  "password": "123456aA!"
+  "phone": "0507777777",
+  "isBusiness":false,
+  "password": "123456cC!"
 }
 
 
@@ -46,7 +46,7 @@ POST http://localhost:8080/users/verify
 Content-Type: application/json
 
 {
-  "verificationCode": "Joww13"
+  "verificationCode": "T5AFzD"
 }
 
 ### Request a new verification code
@@ -54,7 +54,7 @@ POST http://localhost:8080/users/request-new-code
 Content-Type: application/json
 
 {
-  "email": "Yaniv12033@gmail.com"  
+  "email": "yaniv12033@gmail.com"  
 }
 
 
@@ -68,7 +68,7 @@ Content-Type: application/json
 {
   "name": {
     "first": "Willis",
-    "last": "Zinger"
+    "last": "yaniv"
   },
   "address": {
     "street": "123 Main St",
@@ -85,7 +85,7 @@ Content-Type: application/json
   "email": "admin@gmail.com",
   "isBusiness": false,
   "isAdmin": true,
-  "password": "Yaniv!123" 
+  "password": "yaniv!123" 
 }
 
 
@@ -94,8 +94,8 @@ POST http://localhost:8080/users/login
 Content-Type: application/json
 
 {
-  "email": "Yaniv12033@gmail.com",
-  "password": "Yaniv!123"
+  "email": "yaniv12033@gmail.com",
+  "password": "yaniv!123"
 }
 
 ### Login:
@@ -122,12 +122,12 @@ Content-Type: application/json
 Accept: application/json
 
 {
-  "userEmail": "Yaniv12033@gmail.com",
+  "userEmail": "yaniv12033@gmail.com",
   "orderedCardIds": ["65da0a923bb22a2e60784a42"],
   "formData": {
     "DeliveryInformation": {
       "firstName": "John",
-      "email": "Yaniv12033@gmail.com",
+      "email": "yaniv12033@gmail.com",
       "lastName": "Doe",
       "address": "123 Main St",
       "city": "Cityville",
@@ -148,7 +148,7 @@ Content-Type: application/json
 
 {
   "name": "John Doe",
-  "email": "Yaniv12033@gmail.com",
+  "email": "yaniv12033@gmail.com",
   "message": "This is a test message"
 }
 
@@ -161,20 +161,24 @@ Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQ
 Content-Type: application/json
 
 {
-  "title": "Card G",
-  "subtitle": "Card Subtitle",
-  "description": "Card Description",
+  "title": "MacBook Pro Laptop",
+  "subtitle": "MacBook Pro",
+  "description": "Apple 2023 MacBook Pro Laptop M3 chip with 8‑core CPU, 10‑core GPU: 14.2-inch Liquid Retina XDR Display, 8GB Unified Memory, 512GB SSD Storage. Works with iPhone/iPad; Space Gray",
   "brand":"Appel",
-  "price": "50",
-  "shipping": "5.00",
+  "price": "1333",
+  "shipping": "75",
   "images": [
     {
-      "url": "https://m.media-amazon.com/images/I/71zRpbDLNLL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
-      "alt": "Image 1 Alt Text"
+      "url": "https://m.media-amazon.com/images/I/61lsexTCOhL._AC_SX679_.jpg",
+      "alt": "MacBook Pro Laptop"
     },
     {
-      "url": "https://m.media-amazon.com/images/I/61d+X4yl22L._AC_SX679_.jpg",
-      "alt": "Image 1 Alt Text"
+      "url": "https://m.media-amazon.com/images/I/61RdWPq8UfL._AC_SX679_.jpg",
+      "alt": "MacBook Pro Laptop"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/71mhIJSqKhL._AC_SX679_.jpg",
+      "alt": "MacBook Pro Laptop"
     }
   ]
 }
@@ -243,7 +247,7 @@ Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsImlkIjoiNjU5YmZjMGY2M2IzZGJhMDBkYjI2ZTYxIiwiaXNCdXNpbmVzcyI6dHJ1ZSwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNzA1MTU2NzE1fQ.dtHaDafuEZju6wl086JuR2-cRwqT8LAyldKtCR3FODY
 
  {
-  "email": "Yaniv12033@gmail.com"
+  "email": "yaniv12033@gmail.com"
 }
 
 
